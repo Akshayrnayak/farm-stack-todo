@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 from pydantic import BaseModel
 import uvicorn
-from src.dal import ToDoDAL, ListSummary, ToDoList
+from dal import ToDoDAL, ListSummary, ToDoList
 
 COLLECTION_NAME = "todo_lists"
 MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/todoapp")
