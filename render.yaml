@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: farm-stack-backend
+    env: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: PORT
+        value: "3001"
